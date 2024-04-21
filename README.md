@@ -1,6 +1,7 @@
 # GitHub API Integration
 
 This Django application integrates with the GitHub API to search for repositories based on a keyword provided by the user.
+Main source code is located in `/github_api/views.py`. Providing the endpoints is managed in `/github_api/urls.py` and `/github_api_integration/urls.py`.
 
 ## Setup and Usage
 
@@ -10,13 +11,13 @@ This Django application integrates with the GitHub API to search for repositorie
 2. Create a virtual environment
 
 3. Install the required packages:
-  'pip install -r packages.txt'
+   `pip install -r packages.txt`
 
 4. Run the Django development server:
-  'python manage.py runserver'
+   `python manage.py runserver`
 
 
-5. Open your web browser and go to http://localhost:8000/github/search/?keyword=<keyword> to search for repositories. Replace `<keyword>` with your search term.
+5. Open your web browser and go to http://localhost:8000/github/search/?keyword=term to search for repositories. Replace `term` with your search term.
 
 ## API Endpoint
 
@@ -24,10 +25,10 @@ This Django application integrates with the GitHub API to search for repositorie
 - **URL:** /github/search/
 - **Method:** GET
 - **Parameters:**
-- `keyword`: The keyword to search for repositories
+  - `keyword` - The keyword to search for repositories
 
-###Tests
+### Tests
 
-Tests source code is located in /github_api/tests.py
+Tests source code is located in `/github_api/tests.py`
 
-To run tests use command: 'python manage.py test'
+To run tests use command: `python manage.py test`
