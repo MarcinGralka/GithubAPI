@@ -7,14 +7,16 @@ This Django application integrates with the GitHub API to search for repositorie
 1. Clone the repository:
   git clone https://github.com/MarcinGralka/GithubAPI.git
 
-2. Install the required packages:
-  pip install -r packages.txt
+2. Create a virtual environment
 
-3. Run the Django development server:
-  python manage.py runserver
+3. Install the required packages:
+  'pip install -r packages.txt'
+
+4. Run the Django development server:
+  'python manage.py runserver'
 
 
-4. Open your web browser and go to http://localhost:8000/github/search/?keyword=<keyword> to search for repositories. Replace `<keyword>` with your search term.
+5. Open your web browser and go to http://localhost:8000/github/search/?keyword=<keyword> to search for repositories. Replace `<keyword>` with your search term.
 
 ## API Endpoint
 
@@ -23,6 +25,9 @@ This Django application integrates with the GitHub API to search for repositorie
 - **Method:** GET
 - **Parameters:**
 - `keyword`: The keyword to search for repositories
-- **Response Format:**
-- {
-"repositories": 
+
+###Tests
+
+Tests source code is located in /github_api/tests.py
+
+To run tests use command: 'python manage.py test'
